@@ -5,5 +5,6 @@ function agregarAmigo(){
     let aaa =document.getElementById("amigo").value;
     console.log(aaa);
     amigos.push(document.getElementById("amigo").value);
+    console.log(amigos);
     return;
 }
