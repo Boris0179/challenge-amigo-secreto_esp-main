@@ -26,6 +26,7 @@ function agregarAmigo(){
 
 function limpiarCaja() {
     document.querySelector('#amigo').value = '';
+    document.getElementById('resultado').innerHTML='';
 }
 //sortea a los amigos y retira el que ya ha salido en el sorteo
 function sortearAmigo() {
@@ -37,8 +38,7 @@ function sortearAmigo() {
         let NumeroGanador = Math.floor(Math.random() * cantList);
         let ganador = amigos[NumeroGanador];
 
-        let listaHtml= document.getElementById('listaAmigos');
-        listaHtml.innerHTML='';
+        document.getElementById('listaAmigos').innerHTML='';
         amigos = [];
 
         let varGanador = document.getElementById('resultado');
