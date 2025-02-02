@@ -2,9 +2,15 @@
 let amigos = [];
 console.log(amigos);
 function agregarAmigo(){
-    let aaa =document.getElementById("amigo").value;
-    console.log(aaa);
-    amigos.push(document.getElementById("amigo").value);
-    console.log(amigos);
+    let amigo =document.getElementById("amigo").value;
+    console.log(amigo);
+    if (amigo != "")
+    {
+        alert("El campo esta Vacio");
+    } else{
+        amigos.push(amigo);
+        console.log(amigos);
+    }
+
     return;
 }
