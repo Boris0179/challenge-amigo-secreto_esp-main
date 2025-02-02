@@ -4,7 +4,7 @@ console.log(amigos);
 function agregarAmigo(){
     let amigo =document.getElementById("amigo").value;
     console.log(amigo);
-    if (amigo != "")
+    if (amigo.val().length == 0 )
     {
         alert("El campo esta Vacio");
     } else{
